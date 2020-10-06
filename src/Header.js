@@ -9,6 +9,8 @@ function Header() {
 
    const [{cart}, dispatch] = useStateValue();
 
+   console.log(cart)
+
    return (
       <nav className="header">
          <Link to="/">
@@ -46,7 +48,7 @@ function Header() {
             <Link to="/checkout" className="header_link">
                <div className="header_Basket">
                   <ShoppingCartIcon />
-                  <span className="header_optionLineTwo header_basketCout">{cart.length}</span>
+                  <span className="header_optionLineTwo header_basketCout">{cart?.length}</span>
                </div>
             </Link>
          </div>
