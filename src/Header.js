@@ -52,9 +52,6 @@ function Header() {
                </div>
             </Link>
          </div>
-
-
-
       </nav>
    )
 }
