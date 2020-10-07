@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './Header'
-import Home from './Home'
-import Checkout from './Checkout'
-import Login from './Login'
-import Signup from './Signup'
+import Header from './Components/Header'
+import Home from './Components/Home'
+import Checkout from './Components/Checkout'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
 import './App.css';
 
 function App() {
