@@ -14,7 +14,7 @@ function Header() {
    return (
       <nav className="header">
          <Link to="/">
-            <img className="header_logo" src="https://logodownload.org/wp-content/uploads/2020/05/best-buy-logo-2.png"
+            <img className="header_logo" src="../Sven.png"
             alt="Web Logo" />
          </Link>
          

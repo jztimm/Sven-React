@@ -7,30 +7,64 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import './App.css';
 
-function App() {
-  return (
-    <Router>
-    <div className="app">
-      <Switch>
-        <Route path="/checkout">
-          <Header />
-          <Checkout />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/signup">
-          <Signup />
-        </Route>
-        <Route path="/">
-          <Header />
-          <Home />
-        </Route>
-      </Switch>
-    </div>
-    </Router>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-  );
+    this.state = {
+      name: '',
+      email: '',
+      password: '',
+    }
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("form Submit")
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+    console.log(this.state)
+  }
+
+  render() {
+    return (
+      <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
+          <Route path="/login">
+            <Login
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+            email={this.state.email}
+            password={this.state.password}
+            />
+          </Route>
+          <Route path="/signup">
+            <Signup
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+            name={this.state.name}
+            email={this.state.email}
+            password={this.state.password}
+            />
+          </Route>
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

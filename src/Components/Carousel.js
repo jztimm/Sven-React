@@ -4,8 +4,15 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function RenderCarousel() {
+
+   const breakPoints = [
+      {width: 1, itemsToShow: 1},
+      {width: 500, itemsToShow: 2},
+      {width: 768, itemsToShow: 3}
+   ];
+
    return (
-      <Carousel infiniteLoop useKeyboardArrows autoPlay >
+      <Carousel infiniteLoop useKeyboardArrows autoPlay breakPoints={breakPoints}>
          <div >
             <Product
                id="1232141"
