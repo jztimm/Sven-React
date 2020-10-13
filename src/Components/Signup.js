@@ -1,32 +1,51 @@
-import React from 'react'
-import {Link, useHistory} from 'react-router-dom'
-import '../Style/Signup.css'
+import React, {useState} from 'react'
+import {Link, useHistory} from 'react-router-dom';
+import '../Style/Signup.css';
+import {auth} from '../firebase';
 
-class signup extends React.Component{
+function signup() {
 
-   render() {
+ // Similar to state={} with a class
+   const history = useHistory();
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
+
+   const register = e => {
+      e.preventDefault();
+
+      auth.createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+         // if returns, it created a new user successfully
+         console.log(auth)
+         if (auth) {
+            history.push('/')
+         }
+      })
+         // will return an error message if user was not created successfully
+      .catch(error => alert(error.message))
+   }
+
       return (
          <div className="signup">
             <Link to="/">
                <img
                className="signup_logo"
-               src="/Sven.png"
+               src="/Sven_notag.png"
                alt="Sven Logo"
-               // src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-               // alt="Amz logo"
                />
             </Link>
    
             <div className="signup_container">
                <h1>Create Account</h1>
-               <form onSubmit={this.props.handleSubmit}>
-                  <h5>Name</h5>
-                  <input type="text" name="name" value={this.props.name} onChange={this.props.handleChange}/>
+
+               <form>
+                  {/* <h5>Name</h5>
+                  <input type="text" name="name" value={name} onChange={e => setName(e.target.value)}/> */}
                   <h5>Email</h5>
-                  <input type="email" name="email" value={this.props.email} onChange={this.props.handleChange}/>
+                  <input type="email" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                   <h5>Password</h5>
-                  <input type="password" />
-                  <button type="submit" className="signup_signInButton">Sign In</button>
+                  <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)}/>
+                  <button type="submit" onClick={register} className="signup_signInButton">Sign In</button>
                </form>
    
                <p>
@@ -42,7 +61,6 @@ class signup extends React.Component{
             </div>
          </div>
       )
-   }
 }
 
 export default signup

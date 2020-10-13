@@ -18,6 +18,22 @@ class Home extends React.Component {
             </Link>
 
             {/* Product id, title, price rating, img */}
+
+               {/*
+                  {
+                     data.products.map (product => {
+                        <Product
+                           id={product.id}
+                           title={product.title}
+                           price={product.price}
+                           rating={product.rating}
+                           image={product.image}
+                        />
+                     })
+                  }
+               */}
+
+
             <div className="home_row">
                <Product
                   id="12321341"

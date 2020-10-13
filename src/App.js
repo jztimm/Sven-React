@@ -5,30 +5,20 @@ import Home from './Components/Home'
 import Checkout from './Components/Checkout'
 import Login from './Components/Login'
 import Signup from './Components/Signup'
+import Payment from './Components/Payment'
+import Electronics from './Components/Electronics'
+import {loadStripe} from '@stripe/stripe-js'
+import {Elements} from '@stripe/react-stripe-js'
 import './App.css';
 
+const promise = loadStripe
+('pk_test_51Hb9GUBFe7Bk9QsgGfJjvAuKwKM7hO1KFnx7iftTggdUPqCQjnteBKN0eJlHR6Uj9hIfeThiRCizkxtWyK84aEZ300J7zWMj1G');
+
 class App extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      name: '',
-      email: '',
-      password: '',
-    }
-  }
+  useEffect = (() => {
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("form Submit")
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-    console.log(this.state)
-  }
+  }, [])
 
   render() {
     return (
@@ -39,22 +29,21 @@ class App extends React.Component {
             <Header />
             <Checkout />
           </Route>
+          <Route path="/catergory/electronics">
+            <Header />
+            <Electronics />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+          </Route>
           <Route path="/login">
-            <Login
-            handleSubmit={this.handleSubmit}
-            handleChange={this.handleChange}
-            email={this.state.email}
-            password={this.state.password}
-            />
+            <Login />
           </Route>
           <Route path="/signup">
-            <Signup
-            handleSubmit={this.handleSubmit}
-            handleChange={this.handleChange}
-            name={this.state.name}
-            email={this.state.email}
-            password={this.state.password}
-            />
+            <Signup />
           </Route>
           <Route path="/">
             <Header />

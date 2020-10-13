@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import SearchIcon from '@material-ui/icons/Search'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCartRounded'
 import {useStateValue} from '../StateProvider'
+import Dropdown from './Dropdown'
 import '../Style/Header.css'
 
 function Header() {
@@ -12,9 +13,10 @@ function Header() {
    console.log(cart)
 
    return (
+      <div className="Full_Header">
       <nav className="header">
          <Link to="/">
-            <img className="header_logo" src="../Sven.png"
+            <img className="header_logo" src="../Sven_notag.png"
             alt="Web Logo" />
          </Link>
          
@@ -53,6 +55,14 @@ function Header() {
             </Link>
          </div>
       </nav>
+         <nav className="header2">
+            <Link className="header_link2">
+               <div className="header_option2">
+                  <Dropdown />
+               </div>
+            </Link>
+         </nav>
+      </div>
    )
 }
 
