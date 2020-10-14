@@ -1,18 +1,24 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
+import { auth } from '../firebase';
 import '../Style/Login.css';
 
 function Login() {
    
    // Similar to state={} with a class
+   const history = useHistory();
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
 
    const signIn = e => {
       e.preventDefault();
 
-      // Firebase logic
-      
+      auth
+      .signInWithEmailAndPassword(email, password)
+         .then(auth => {
+            history.push('/')
+         })
+         .catch(err => alert(err.message))
    }
 
 
@@ -31,7 +37,7 @@ function Login() {
                <h5>Email</h5>
                <input type="email" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                <h5>Password</h5>
-               <input type="password" name="password" value={password} onChange={e => setpassword(e.target.value)}/>
+               <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)}/>
                <button type="submit" onClick={signIn} className="login_signInButton">Sign In</button>
             </form>
             <p>

@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useStateValue} from '../StateProvider'
+import {auth} from '../firebase'
 import SearchIcon from '@material-ui/icons/Search'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCartRounded'
-import {useStateValue} from '../StateProvider'
 import Dropdown from './Dropdown'
 import '../Style/Header.css'
 
 function Header() {
 
-   const [{cart}, dispatch] = useStateValue();
+   const [{cart, user}, dispatch] = useStateValue();
 
-   console.log(cart)
+   const handleAuth = () => {
+      if (user) {
+         auth.signOut();
+      }
+   }
 
    return (
       <div className="Full_Header">
@@ -26,10 +31,11 @@ function Header() {
          </div>
 
          <div className="header_nav">
-            <Link to="/login" className="header_link">
-               <div className="header_option">
-                  <span className="header_optionLineOne">Hello Jzavier</span>
-                  <span className="header_optionLineTwo">Sign In</span>
+            <Link to={!user && "/login"} className="header_link">
+               <div onClick={handleAuth} className="header_option">
+                  <span className="header_optionLineOne">Hello 
+                  {user ? ` ${user.email}` : ` Guest`}</span>
+                  <span className="header_optionLineTwo">{user ? `Sign Out` : `Sign In`}</span>
                </div>
             </Link>
 

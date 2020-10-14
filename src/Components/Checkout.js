@@ -6,7 +6,7 @@ import '../Style/Checkout.css'
 
 function Checkout() {
 
-   const [{cart}] = useStateValue();
+   const [{cart, user}] = useStateValue();
 
    return (
       <div className="checkout">
@@ -23,6 +23,8 @@ function Checkout() {
                </div>
             ) : (
                <div>
+                  <h3>Hello, <br/>
+                     {user.email}</h3>
                   <h2 className="checkout_title">Your Shopping Cart</h2>
 
                   {/* list of the checkout items*/}
