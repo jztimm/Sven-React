@@ -8,6 +8,7 @@ import {Link, useHistory} from 'react-router-dom'
 import {CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import {getCartTotal} from '../Reducer'
 import CurrencyFormat from 'react-currency-format'
+import {db} from '../firebase'
 
 function Payment() {
    const [{cart, user}, dispatch] = useStateValue();
@@ -40,7 +41,6 @@ function Payment() {
 
    console.log("The Secret Is >>> ", clientSecret)
 
-
    const handleSubmit = async (event) => {
       // Stripe stuff
 
@@ -53,6 +53,17 @@ function Payment() {
          }
       }).then(({ paymentIntent }) => {
          // paymentIntent = paymentConfirmation
+
+         db
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+               cart: cart,
+               amount: paymentIntent.amount,
+               created: paymentIntent.created
+            })
 
          setSucceeded(true);
          setError(null);
