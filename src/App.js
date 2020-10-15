@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {auth} from './firebase';
 import {useStateValue} from './StateProvider'
 import {loadStripe} from '@stripe/stripe-js'
 import {Elements} from '@stripe/react-stripe-js'
@@ -10,8 +11,8 @@ import Checkout from './Components/Checkout'
 import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Payment from './Components/Payment'
+import Orders from './Components/Orders'
 import Electronics from './Components/Electronics'
-import {auth} from './firebase';
 import './App.css';
 
 
@@ -24,7 +25,6 @@ function App() {
   useEffect(() => {
     // will only run once when the app component loads...
     auth.onAuthStateChanged(authUser => {
-      console.log('The user is >>> ', authUser);
 
       if (authUser) {
         // user is logged in / or just logged in
@@ -48,6 +48,10 @@ function App() {
     <Router>
     <div className="app">
       <Switch>
+        <Route path="/orders">
+          <Header />
+          <Orders />
+        </Route>
         <Route path="/checkout">
           <Header />
           <Checkout />

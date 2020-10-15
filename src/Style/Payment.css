@@ -29,3 +29,13 @@
    flex: 0.8;
 }
 
+.payment_priceContainer {
+   margin-top: 20px;
+   border-top: 1px solid lightgrey;
+}
+
+.payment_priceContainer > h3{
+   margin-top: 15px;
+}
+
+

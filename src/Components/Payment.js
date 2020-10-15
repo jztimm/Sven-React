@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import axios from './axios'
 import CheckoutProduct from './CheckoutProduct'
 import '../Style/Payment.css'
+
 import { useStateValue } from '../StateProvider'
 import {Link, useHistory} from 'react-router-dom'
-import CurrencyFormat from 'react-currency-format'
-import {getCartTotal} from '../Reducer'
 import {CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
+import {getCartTotal} from '../Reducer'
+import CurrencyFormat from 'react-currency-format'
 
 function Payment() {
    const [{cart, user}, dispatch] = useStateValue();
@@ -15,7 +16,7 @@ function Payment() {
    const stripe = useStripe();
    const elements = useElements();
 
-   const [suceeded, setSuccessed] = useState(false);
+   const [suceeded, setSucceeded] = useState(false);
    const [processing, setProcessing] = useState("");
    const [error, setError] = useState(null);
    const [disabled, setDisabled] = useState(true);
@@ -26,8 +27,10 @@ function Payment() {
 
       const getClientSecret = async () => {
          const response = await axios({
-            method: 'POST',
-            url: `/payment/create?total=${getCartTotal(cart) * 100 }`
+            method: 'post',
+
+            // Strip excepts the total in subunits of the currency. Uses cents for USD
+            url: `/payments/create?total=${getCartTotal(cart) * 100 }`
          });
          setClientSecret(response.data.clientSecret)
       }
@@ -35,9 +38,11 @@ function Payment() {
       getClientSecret();
    }, [cart])
 
+   console.log("The Secret Is >>> ", clientSecret)
+
 
    const handleSubmit = async (event) => {
-      // Do stripe stuff
+      // Stripe stuff
 
       event.preventDefault();
       setProcessing(true);
@@ -46,11 +51,16 @@ function Payment() {
          payment_method: {
             card: elements.getElement(CardElement)
          }
-      }).then(({paymentIntent}) => {
+      }).then(({ paymentIntent }) => {
          // paymentIntent = paymentConfirmation
-         setSuccessed(true);
+
+         setSucceeded(true);
          setError(null);
          setProcessing(false);
+
+         dispatch({
+            type: "EMPTY BASKET"
+         })
 
          history.replace('/orders')
       })
@@ -110,24 +120,29 @@ function Payment() {
                <div className="payment_details">
                   {/* Stripe */}
                   <form onSubmit={handleSubmit}>
-                     <CardElement on Change={handleChange}/>
+                     <CardElement onChange={handleChange}/>
+
                      <div className="payment_priceContainer">
-                     <CurrencyFormat
-                        renderText={(value) =>(
-                           <h3> Order Total: {`${value}`}</h3>
-                        )}
-                        decimalScale={2}
-                        value={getCartTotal(cart)}
-                        displayType={"text"}
-                        thousandsSeparator={true}
-                        prefix={"$"}
-                     />
-                     <button disabled={processing ||
-                     disabled || suceeded}>
-                        <span>{processing ? <p>Processing</p> :
-                        "Buy Now"}</span>
-                     </button>
+                        <CurrencyFormat
+                           renderText={(value) =>(
+                              <h3> Order Total: {`${value}`}</h3>
+                           )}
+                           decimalScale={2}
+                           value={getCartTotal(cart)}
+                           displayType={"text"}
+                           thousandsSeparator={true}
+                           prefix={"$"}
+                        />
+
+                        <button disabled={processing || disabled || suceeded}>
+
+                           <span>
+                              {processing ? <p>Processing</p> : "Buy Now"}
+                           </span>
+
+                        </button>
                      </div>
+                        {/* Errors */}
                      {error && <div>{error}</div>}
                   </form>
                </div>
