@@ -1,0 +1,575 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "/home/jztimm/code/labs/mod5-project/solo-testing/amz-clone",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2020-10-15 05:39:38",
+            "filesum": 81,
+            "codesum": 30534,
+            "commentsum": 430,
+            "blanksum": 2354,
+            "statistics": {
+                "": {
+                    "code": 24,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".log": {
+                    "code": 141,
+                    "comment": 9,
+                    "blank": 4
+                },
+                ".json": {
+                    "code": 19845,
+                    "comment": 39,
+                    "blank": 42
+                },
+                ".md": {
+                    "code": 37,
+                    "comment": 12,
+                    "blank": 31
+                },
+                ".txt": {
+                    "code": 6,
+                    "comment": 170,
+                    "blank": 13
+                },
+                ".html": {
+                    "code": 21,
+                    "comment": 23,
+                    "blank": 0
+                },
+                ".lock": {
+                    "code": 8906,
+                    "comment": 34,
+                    "blank": 1950
+                },
+                ".css": {
+                    "code": 471,
+                    "comment": 26,
+                    "blank": 92
+                },
+                ".js": {
+                    "code": 1021,
+                    "comment": 114,
+                    "blank": 215
+                },
+                ".yml": {
+                    "code": 38,
+                    "comment": 2,
+                    "blank": 2
+                },
+                ".cache": {
+                    "code": 20,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".map": {
+                    "code": 4,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": ".firebase/hosting.YnVpbGQ.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": ".firebaserc"
+                },
+                {
+                    "blank": 1,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": ".github/workflows/firebase-hosting-merge.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": ".github/workflows/firebase-hosting-pull-request.yml"
+                },
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "build/asset-manifest.json"
+                },
+                {
+                    "filename": "build/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/index.html"
+                },
+                {
+                    "filename": "build/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "build/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "build/precache-manifest.f5f66d70a38b047bfc246fd2e51ea3d3.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "build/robots.txt"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 17,
+                    "filename": "build/service-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/css/main.1ba70294.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/css/main.1ba70294.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": "build/static/js/2.b1e2b9af.chunk.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 0,
+                    "comment": 168,
+                    "filename": "build/static/js/2.b1e2b9af.chunk.js.LICENSE.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/2.b1e2b9af.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/main.eee4666d.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/main.eee4666d.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/runtime-main.0170e956.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/runtime-main.0170e956.js.map"
+                },
+                {
+                    "filename": "build/Sven.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build/Sven_notag.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "firebase.json"
+                },
+                {
+                    "blank": 37,
+                    "code": 47,
+                    "comment": 39,
+                    "filename": "functions/.eslintrc.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "functions/.gitignore"
+                },
+                {
+                    "blank": 4,
+                    "code": 140,
+                    "comment": 8,
+                    "filename": "functions/firebase-debug.log"
+                },
+                {
+                    "blank": 14,
+                    "code": 21,
+                    "comment": 9,
+                    "filename": "functions/index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3056,
+                    "comment": 0,
+                    "filename": "functions/package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": "functions/package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "functions/ui-debug.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 16580,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "filename": "public/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 23,
+                    "filename": "public/index.html"
+                },
+                {
+                    "filename": "public/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "public/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "public/robots.txt"
+                },
+                {
+                    "filename": "public/Sven.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public/Sven_notag.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 31,
+                    "code": 37,
+                    "comment": 12,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/App.css"
+                },
+                {
+                    "blank": 10,
+                    "code": 72,
+                    "comment": 3,
+                    "filename": "src/App.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "src/Components/axios.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "src/Components/Carousel.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 46,
+                    "comment": 0,
+                    "filename": "src/Components/Checkout.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 1,
+                    "filename": "src/Components/CheckoutProduct.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 0,
+                    "comment": 10,
+                    "filename": "src/Components/data.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 45,
+                    "comment": 2,
+                    "filename": "src/Components/Dropdown.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "src/Components/Electronics.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 65,
+                    "comment": 0,
+                    "filename": "src/Components/Header.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 71,
+                    "comment": 13,
+                    "filename": "src/Components/Home.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 49,
+                    "comment": 1,
+                    "filename": "src/Components/Login.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src/Components/Order.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src/Components/Orders.js"
+                },
+                {
+                    "blank": 29,
+                    "code": 134,
+                    "comment": 4,
+                    "filename": "src/Components/Payment.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "src/Components/Product.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 52,
+                    "comment": 4,
+                    "filename": "src/Components/Signup.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 34,
+                    "comment": 1,
+                    "filename": "src/Components/Subtotal.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src/firebase.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 3,
+                    "filename": "src/index.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 44,
+                    "comment": 2,
+                    "filename": "src/Reducer.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 95,
+                    "comment": 31,
+                    "filename": "src/serviceWorker.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": "src/StateProvider.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src/Style/Checkout.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/Style/CheckoutProduct.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src/Style/Dropdown.css"
+                },
+                {
+                    "blank": 30,
+                    "code": 116,
+                    "comment": 1,
+                    "filename": "src/Style/Header.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 24,
+                    "comment": 11,
+                    "filename": "src/Style/Home.css"
+                },
+                {
+                    "blank": 13,
+                    "code": 56,
+                    "comment": 6,
+                    "filename": "src/Style/Login.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src/Style/Order.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src/Style/Orders.css"
+                },
+                {
+                    "blank": 12,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "src/Style/Payment.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src/Style/Product.css"
+                },
+                {
+                    "blank": 8,
+                    "code": 49,
+                    "comment": 7,
+                    "filename": "src/Style/Signup.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "src/Style/Subtotal.css"
+                },
+                {
+                    "blank": 1950,
+                    "code": 8906,
+                    "comment": 34,
+                    "filename": "yarn.lock"
+                }
+            ]
+        }
+    ]
+}

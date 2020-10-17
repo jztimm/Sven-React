@@ -1,0 +1,109 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2020-10-15 05:39:38
+count workspace : /home/jztimm/code/labs/mod5-project/solo-testing/amz-clone
+total files : 81
+total code lines : 30534
+total comment lines : 430
+total blank lines : 2354
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |               |             24|              1|              5|  0.079|
+   |           .log|            141|              9|              4|   0.46|
+   |          .json|          19845|             39|             42|     65|
+   |            .md|             37|             12|             31|   0.12|
+   |           .txt|              6|            170|             13|  0.020|
+   |          .html|             21|             23|              0|  0.069|
+   |          .lock|           8906|             34|           1950|     29|
+   |           .css|            471|             26|             92|    1.5|
+   |            .js|           1021|            114|            215|    3.3|
+   |           .yml|             38|              2|              2|   0.12|
+   |         .cache|             20|              0|              0|  0.066|
+   |           .map|              4|              0|              0|  0.013|
+   -------------------------------------------------------------------------
+.firebase/hosting.YnVpbGQ.cache, code is 20, comment is 0, blank is 0.
+.firebaserc, code is 5, comment is 0, blank is 0.
+.github/workflows/firebase-hosting-merge.yml, code is 21, comment is 1, blank is 1.
+.github/workflows/firebase-hosting-pull-request.yml, code is 17, comment is 1, blank is 1.
+.gitignore, code is 18, comment is 1, blank is 5.
+build/asset-manifest.json, code is 21, comment is 0, blank is 1.
+build/favicon.ico, it is a binary file.
+build/index.html, code is 1, comment is 0, blank is 0.
+build/logo192.png, it is a binary file.
+build/logo512.png, it is a binary file.
+build/manifest.json, code is 25, comment is 0, blank is 0.
+build/precache-manifest.f5f66d70a38b047bfc246fd2e51ea3d3.js, code is 26, comment is 0, blank is 0.
+build/robots.txt, code is 3, comment is 1, blank is 0.
+build/service-worker.js, code is 14, comment is 17, blank is 8.
+build/static/css/main.1ba70294.chunk.css, code is 1, comment is 1, blank is 0.
+build/static/css/main.1ba70294.chunk.css.map, code is 1, comment is 0, blank is 0.
+build/static/js/2.b1e2b9af.chunk.js, code is 1, comment is 3, blank is 0.
+build/static/js/2.b1e2b9af.chunk.js.LICENSE.txt, code is 0, comment is 168, blank is 13.
+build/static/js/2.b1e2b9af.chunk.js.map, code is 1, comment is 0, blank is 0.
+build/static/js/main.eee4666d.chunk.js, code is 1, comment is 1, blank is 0.
+build/static/js/main.eee4666d.chunk.js.map, code is 1, comment is 0, blank is 0.
+build/static/js/runtime-main.0170e956.js, code is 1, comment is 1, blank is 0.
+build/static/js/runtime-main.0170e956.js.map, code is 1, comment is 0, blank is 0.
+build/Sven.png, it is a binary file.
+build/Sven_notag.png, it is a binary file.
+firebase.json, code is 19, comment is 0, blank is 2.
+functions/.eslintrc.json, code is 47, comment is 39, blank is 37.
+functions/.gitignore, code is 1, comment is 0, blank is 0.
+functions/firebase-debug.log, code is 140, comment is 8, blank is 4.
+functions/index.js, code is 21, comment is 9, blank is 14.
+functions/package-lock.json, code is 3056, comment is 0, blank is 0.
+functions/package.json, code is 29, comment is 0, blank is 0.
+functions/ui-debug.log, code is 1, comment is 1, blank is 0.
+package-lock.json, code is 16580, comment is 0, blank is 0.
+package.json, code is 43, comment is 0, blank is 2.
+public/favicon.ico, it is a binary file.
+public/index.html, code is 20, comment is 23, blank is 0.
+public/logo192.png, it is a binary file.
+public/logo512.png, it is a binary file.
+public/manifest.json, code is 25, comment is 0, blank is 0.
+public/robots.txt, code is 3, comment is 1, blank is 0.
+public/Sven.png, it is a binary file.
+public/Sven_notag.png, it is a binary file.
+README.md, code is 37, comment is 12, blank is 31.
+src/App.css, code is 3, comment is 0, blank is 0.
+src/App.js, code is 72, comment is 3, blank is 10.
+src/Components/axios.js, code is 5, comment is 1, blank is 2.
+src/Components/Carousel.js, code is 43, comment is 0, blank is 4.
+src/Components/Checkout.js, code is 46, comment is 0, blank is 10.
+src/Components/CheckoutProduct.js, code is 36, comment is 1, blank is 7.
+src/Components/data.js, code is 0, comment is 10, blank is 6.
+src/Components/Dropdown.js, code is 45, comment is 2, blank is 12.
+src/Components/Electronics.js, code is 14, comment is 1, blank is 4.
+src/Components/Header.js, code is 65, comment is 0, blank is 10.
+src/Components/Home.js, code is 71, comment is 13, blank is 11.
+src/Components/Login.js, code is 49, comment is 1, blank is 8.
+src/Components/Order.js, code is 37, comment is 0, blank is 3.
+src/Components/Orders.js, code is 36, comment is 0, blank is 7.
+src/Components/Payment.js, code is 134, comment is 4, blank is 29.
+src/Components/Product.js, code is 40, comment is 1, blank is 5.
+src/Components/Signup.js, code is 52, comment is 4, blank is 11.
+src/Components/Subtotal.js, code is 34, comment is 1, blank is 4.
+src/firebase.js, code is 15, comment is 0, blank is 12.
+src/index.css, code is 13, comment is 0, blank is 1.
+src/index.js, code is 16, comment is 3, blank is 2.
+src/Reducer.js, code is 44, comment is 2, blank is 11.
+src/serviceWorker.js, code is 95, comment is 31, blank is 15.
+src/StateProvider.js, code is 8, comment is 5, blank is 10.
+src/Style/Checkout.css, code is 15, comment is 0, blank is 2.
+src/Style/CheckoutProduct.css, code is 27, comment is 0, blank is 5.
+src/Style/Dropdown.css, code is 32, comment is 0, blank is 1.
+src/Style/Header.css, code is 116, comment is 1, blank is 30.
+src/Style/Home.css, code is 24, comment is 11, blank is 6.
+src/Style/Login.css, code is 56, comment is 6, blank is 13.
+src/Style/Order.css, code is 16, comment is 0, blank is 2.
+src/Style/Orders.css, code is 6, comment is 0, blank is 1.
+src/Style/Payment.css, code is 49, comment is 0, blank is 12.
+src/Style/Product.css, code is 36, comment is 0, blank is 6.
+src/Style/Signup.css, code is 49, comment is 7, blank is 8.
+src/Style/Subtotal.css, code is 28, comment is 0, blank is 5.
+yarn.lock, code is 8906, comment is 34, blank is 1950.
+===============================================================================

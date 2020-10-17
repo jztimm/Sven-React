@@ -22,6 +22,30 @@ const promise = loadStripe
 function App() {
   const [{}, dispatch] = useStateValue();
 
+  const [{cart}, setState] = useStateValue();
+
+  // const [{cart}, setState] = useStateValue(useEffect(() => {localStorage.getItem('My Cart')}));
+
+  // useEffect(() => {
+  //     const data = localStorage.getItem('My Cart');
+  //     const newCart = setState(JSON.parse(data))
+  //     console.log(data);
+
+  //     const data = localStorage.getItem('My Cart')
+  //     .then( setState({ cart: data }))
+  // }, [])
+
+  // useEffect(() => {
+  //     const data = localStorage.getItem('My Cart');
+  //     if (data) {
+  //       cart(JSON.parse(data));
+  //     }
+  // }, [])
+
+  useEffect(() => {
+      localStorage.setItem('My Cart', JSON.stringify(cart))
+    })
+
   useEffect(() => {
     // will only run once when the app component loads...
     auth.onAuthStateChanged(authUser => {
