@@ -1,6 +1,6 @@
 import React from 'react'
-import {Computers} from '../data'
-import Product from './Product'
+import {Computers} from '../../data'
+import Product from '../Product'
 
 class Computer extends React.Component {
 
