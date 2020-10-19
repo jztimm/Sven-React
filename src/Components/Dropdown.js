@@ -36,8 +36,11 @@ class Dropdown extends React.Component {
 
                { this.state.displayMenu ? (
                <ul>
-                  <li><Link to="/catergory/electronics">
-                     <a>Electronics</a>
+                  <li><Link to="/catergory/cameras">
+                     <a>Cameras</a>
+                  </Link></li>
+                  <li><Link to="/catergory/computers">
+                     <a>Computers</a>
                   </Link></li>
                   {/* <li><Link to="/catergory/electronics">
                      <a>Log Out</a>

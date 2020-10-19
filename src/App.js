@@ -12,7 +12,8 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Payment from './Components/Payment'
 import Orders from './Components/Orders'
-import Electronics from './Components/Electronics'
+import Camera from './Components/Cameras'
+import Computer from './Components/Computer'
 import './App.css';
 
 
@@ -26,14 +27,14 @@ function App() {
 
   // const [{cart}, setState] = useStateValue(useEffect(() => {localStorage.getItem('My Cart')}));
 
-  // useEffect(() => {
-  //     const data = localStorage.getItem('My Cart');
-  //     const newCart = setState(JSON.parse(data))
-  //     console.log(data);
+  useEffect(() => {
+      const data = localStorage.getItem('My Cart');
+      // setState(data)
+      console.log(data);
 
-  //     const data = localStorage.getItem('My Cart')
-  //     .then( setState({ cart: data }))
-  // }, [])
+      // const data = localStorage.getItem('My Cart')
+      // .then( setState({ cart: data }))
+  }, [])
 
   // useEffect(() => {
   //     const data = localStorage.getItem('My Cart');
@@ -80,9 +81,13 @@ function App() {
           <Header />
           <Checkout />
         </Route>
-        <Route path="/catergory/electronics">
+        <Route path="/catergory/cameras">
           <Header />
-          <Electronics />
+          <Camera />
+        </Route>
+        <Route path="/catergory/computers">
+          <Header />
+          <Computer />
         </Route>
         <Route path="/payment">
           <Header />
