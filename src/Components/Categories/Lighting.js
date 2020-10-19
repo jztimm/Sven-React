@@ -1,11 +1,11 @@
 import React from 'react'
-import {Cameras} from '../data'
-import Product from './Product'
+import {Lights} from '../../data'
+import Product from '../Product'
 
-class Camera extends React.Component {
+class Lighting extends React.Component {
 
    state = {
-      categoryResults: Cameras
+      categoryResults: Lights
    }
 
    renderData = () => {
@@ -29,4 +29,4 @@ class Camera extends React.Component {
    }
 }
 
-export default Camera
+export default Lighting

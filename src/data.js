@@ -222,4 +222,133 @@ const Computers = [
 
 ]
 
-export {Cameras, Computers}
+const Lights = [
+   {
+      id: "33",
+      title: "Philips Hue LightStrip Plus Dimmable LED Smart Light Extension (Requires Lightstrip Base & Hue Hub, Works with Alexa, HomeKit & Google Assistant)",
+      price: 24.97,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/8165pe%2B%2BLgL._AC_SL1500_.jpg"
+   },
+   {
+      id: "34",
+      title: "SYLVANIA Smart + ZigBee Indoor Starter Kit, Color Changing Light Strip, Works with SmartThings, Wink, and Amazon Echo Plus",
+      price: 35.62,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71Liv2FnSDL._AC_SL1500_.jpg"
+   },
+   {
+      id: "35",
+      title: "Philips Hue White Ambiance A19 10W Dimmable LED Smart Bulb (Hue Hub Required, Works with Alexa, HomeKit & Google Assistant)",
+      price: 24.54,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61tyZiEFuDL._AC_SL1500_.jpg"
+   },
+   {
+      id: "36",
+      title: "GUSODOR LED Strip Lights RGB Strips 32.8ft Waterproof Tape Light 300 LEDs SMD5050 Music Sync Color Changing +24Key Remote Control Decoration for Home Bedroom TV Party Christmas - Smart APP Controlled",
+      price: 26.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/81sQbJ2T5QL._AC_SL1500_.jpg"
+   },
+   {
+      id: "37",
+      title: "Kasa Smart Light Switch by TP-Link,Single Pole,Needs Neutral Wire,2.4Ghz WiFi Light Switch Works with Alexa and Google Assistant,UL Certified, 3-Pack(HS200P3)",
+      price: 54.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61VvqSdT5OL._AC_SL1500_.jpg"
+   },
+   {
+      id: "38",
+      title: "Smart WiFi Light Bulb, LED RGB Color Changing, Compatible with Alexa and Google Home Assistant, No Hub Required, A19 E26 Multicolor LUMIMAN 2 Pack",
+      price: 19.98,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61axAPdYt3L._AC_SL1500_.jpg"
+   },
+   {
+      id: "39",
+      title: "FIBARO The Button Z-Wave Plus Scene Controller On-Off Trigger, FGPB-101-8, Orange",
+      price: 44.50,
+      rating: 2,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51i18q2%2BoPL._AC_SL1000_.jpg"
+   },
+   {
+      id: "40",
+      title: "Lutron 3-Button with Raise/Lower Pico Remote for Caseta Wireless Smart Lighting Dimmer Switch, PJ2-3BRL-WH-L01R, White",
+      price: 14.95,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51k3isWiddL._AC_SL1200_.jpg"
+   },
+   {
+      id: "41",
+      title: "FIBARO The Button Z-Wave Plus Scene Controller On-Off Trigger, FGPB-101-3, Red",
+      price: 59.98,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51BtSQhVkCL._AC_SL1000_.jpg"
+   },
+   {
+      id: "42",
+      title: "Govee 32.8ft LED Strip Lights Works with Alexa Google Home, Wireless Smart App Control RGB Light Strip Kit Music Sync for Room TV Kitchen Home Party, Bright 5050 LEDs, 16 Million Colors, Easy Install",
+      price: 43.69,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71SVZMGavGL._AC_SL1000_.jpg"
+   },
+   {
+      id: "43",
+      title: "Philips Hue White and Color Ambiance 2-Pack A19 LED Smart Bulb, Bluetooth & Zigbee compatible (Hue Hub Optional), Works with Alexa & Google Assistant – A Certified for Humans Device",
+      price: 89.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/81JLJ7VJWtL._AC_SL1500_.jpg"
+   },
+   {
+      id: "44",
+      title: "Wemo Light Switch, WiFi enabled, Works with Alexa and the Google Assistant (F7C030fc)",
+      price: 39.37,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/510yp4Dw5pL._AC_SL1000_.jpg"
+   },
+   {
+      id: "45",
+      title: "Kasa Smart Light Bulb, LED Smart WiFi Alexa Bulbs works with Alexa and Google Home,A19 Dimmable,2.4Ghz,No Hub Required, 800LM Soft White(2700K), 10W(60W Equivalent)(KL110)",
+      price: 13.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/717NoHGUK0L._AC_SL1500_.jpg"
+   },
+   {
+      id: "46",
+      title: "Govee 32.8ft LED Strip Lights Works with Alexa and Google Assistant Wireless Smart Phone APP Control Light Strip (2x5m) Music Sync RGB Tape LED Lights for Room Kitchen Home Party (Not Support 5G WiFi)",
+      price: 35.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71boqDqyIGL._AC_SL1500_.jpg"
+   },
+   {
+      id: "47",
+      title: "Smart Light Bulb Works with Alexa Google Home Siri,No Hub Required, NiteBird WiFi Dimmable 800 Lumen Warm White A19 E26 2700K LED Lights Bulbs, 8W (75W Equivalent),4 Pack",
+      price: 40.00,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61%2BVQuWH0ML._AC_SL1500_.jpg"
+   },
+   {
+      id: "48",
+      title: "Nexillumi LED Strip Lights for 56''-75'' TV with Remote App Control TV LED Backlight Color Changing RGB LED Strip USB Powered (APP Control+ Remote) (13.2Ft + 3.2Ft Corner Cords)",
+      price: 23.98,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/91cCXWQLK6L._AC_SL1500_.jpg"
+   },
+   {
+      id: "49",
+      title: "Lutron Caseta Smart Home Switch, Works with Alexa, Apple HomeKit, Google Assistant | 6-Amp, for Ceiling Fans, Exhaust Fans, LED Light Bulbs, Incandescent and Halogen Bulbs | PD-6ANS-LA | Light Almond",
+      price: 100.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71Wy2xvjHyL._AC_SL1182_.jpg"
+   },
+   {
+      id: "50",
+      title: "65.6ft Alexa LED Strip Lights, Govee Smart WiFi RGB Rope Light Works with Alexa Google Assistant, Remote App Control Lighting Kit, Music Sync Color Changing Lights for Bedroom, Living Room, Kitchen",
+      price: 60.00,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71np51zZV0L._AC_SL1000_.jpg"
+   }
+]
+
+export {Cameras, Computers, Lights}

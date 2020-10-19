@@ -12,8 +12,9 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Payment from './Components/Payment'
 import Orders from './Components/Orders'
-import Camera from './Components/Cameras'
-import Computer from './Components/Computer'
+import Camera from './Components/Categories/Cameras'
+import Computer from './Components/Categories/Computer'
+import Lighting from './Components/Categories/Lighting'
 import './App.css';
 
 
@@ -88,6 +89,10 @@ function App() {
         <Route path="/catergory/computers">
           <Header />
           <Computer />
+        </Route>
+        <Route path="/catergory/lights">
+          <Header />
+          <Lighting />
         </Route>
         <Route path="/payment">
           <Header />
