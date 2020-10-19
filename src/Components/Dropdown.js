@@ -45,6 +45,9 @@ class Dropdown extends React.Component {
                   <li><Link to="/catergory/lights">
                      <a>Lighting</a>
                   </Link></li>
+                  <li><Link to="/catergory/smartdevices">
+                     <a>Smart Devices</a>
+                  </Link></li>
                </ul>
                ):
                (

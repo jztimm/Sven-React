@@ -15,6 +15,7 @@ import Orders from './Components/Orders'
 import Camera from './Components/Categories/Cameras'
 import Computer from './Components/Categories/Computer'
 import Lighting from './Components/Categories/Lighting'
+import SmartDevices from './Components/Categories/SmartDevices'
 import './App.css';
 
 
@@ -93,6 +94,10 @@ function App() {
         <Route path="/catergory/lights">
           <Header />
           <Lighting />
+        </Route>
+        <Route path="/catergory/smartdevices">
+          <Header />
+          <SmartDevices />
         </Route>
         <Route path="/payment">
           <Header />

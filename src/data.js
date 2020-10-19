@@ -351,4 +351,147 @@ const Lights = [
    }
 ]
 
-export {Cameras, Computers, Lights}
+const SmartDevice = [
+   {
+      id: "51",
+      title: "Ring Solar Steplight -- Outdoor Motion-Sensor Security Light, Black (Ring Bridge required)",
+      price: 29.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/612fAzVD1ZL._SL1000_.jpg"
+   },
+   {
+      id: "52",
+      title: "Ring Solar Pathlight -- Outdoor Motion-Sensor Security Light, Black (Ring Bridge required)",
+      price: 34.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61-rjIKbkZL._SL1000_.jpg"
+   },
+   {
+      id: "53",
+      title: "iRobot Roomba 692 Robot Vacuum-Wi-Fi Connectivity, Works with Alexa, Good for Pet Hair, Carpets, Hard Floors, Self-Charging, Charcoal Grey",
+      price: 299.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/81nWDwiFmiL._AC_SL1500_.jpg"
+   },
+   {
+      id: "54",
+      title: "All-new Ring Video Doorbell – 1080p HD video, improved motion detection, easy installation – Venetian Bronze (2020 release)",
+      price: 99.99,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61GMSEppgsL._SL1000_.jpg"
+   },
+   {
+      id: "55",
+      title: "iRobot Roomba i6+ (6550) Robot Vacuum with Automatic Dirt Disposal-Empties Itself, Traps Allergens, Wi-Fi Connected, Works with Alexa, Ideal for Pet Hair, Carpets, + Digital Smart Mapping Upgrade",
+      price: 799.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71dYXeq7KoL._AC_SL1500_.jpg"
+   },
+   {
+      id: "56",
+      title: "Ring Indoor Cam, Compact Plug-In HD security camera with two-way talk, Works with Alexa - Black",
+      price: 59.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51jouZJorPL._SL1000_.jpg"
+   },
+   {
+      id: "57",
+      title: "Smart Plug Amysen - A Certified Compatible with Alexa, Echo & Google Home – Only WiFi 2.4G (Z1 4 Pack)",
+      price: 29.99,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71WctViyC1L._AC_SL1500_.jpg"
+   },
+   {
+      id: "58",
+      title: "Govee Temperature Humidity Monitor, 2 Pack Indoor Bluetooth Temperature Sensor with Alert Notification, Free Data Store Accurate Hygrometer Thermometer for Home Office Baby Room Greenhouse Reptile",
+      price: 22.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51BQZvjVSXL._AC_.jpg"
+   },
+   {
+      id: "59",
+      title: "TiVo Stream 4K – Every Streaming App and Live TV on One Screen – 4K UHD, Dolby Vision HDR and Dolby Atmos Sound – Powered by Android TV – Plug-in Smart TV",
+      price: 49.00,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61CI2BW3JLL._AC_SL1500_.jpg"
+   },
+   {
+      id: "60",
+      title: "NiteBird 9.2Ft Smart TV LED Backlight, Strip Lights Works with Alexa Google Home Siri, 24-60 in TV WiFi APP Control 16 Million Colors RGB Light Strip for PC Desk,Waterproof,Music Sync,USB Powered",
+      price: 13.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/814LKvr7BcL._AC_SL1500_.jpg"
+   },
+   {
+      id: "61",
+      title: "Smart Outlet, Gosund Wall Outlet Extender (15A/1800W), Multi WiFi Plug with 3 USB Ports (5V/3A 24W) and 6 Outlet Wall Adapter Plug Expanders Surge Protector Works with Alexa and Google Home",
+      price: 20.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/5122W9nsx-L._AC_SL1500_.jpg"
+   },
+   {
+      id: "62",
+      title: "Smart Dimmer Plug Treatlife Outdoor Dimmer Works with Alexa and Google Assistant, WiFi Outlet Remote Control, No Hub Required, IP44 Waterproof for Dimmable String Lights, Max Power 400W",
+      price: 24.47,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/71Sjjwpr12L._AC_SL1500_.jpg"
+   },
+   {
+      id: "63",
+      title: "Wi-Fi Mini Projector, Bomaker Ultra Portable Projector for Outdoor Movies, 6000 Lux, HD Outdoor Movie Projectors, Wireless Mirroring, for iPhone / Android / Laptops / PCs / Windows /DVD Player",
+      price: 164.76,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/819PAslwFrL._AC_SL1500_.jpg"
+   },
+   {
+      id: "64",
+      title: "Roborock S6 MaxV Robot Vacuum Cleaner with ReactiveAI and Lidar Navigation, 2500Pa Strong Suction, Intelligent Mopping Robotic Vacuum and Mop",
+      price: 749.99,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61w8D3KTY1L._AC_SL1000_.jpg"
+   },
+   {
+      id: "65",
+      title: "Roborock S6 Pure Robot Vacuum and Mop, Multi-Floor Mapping, Lidar Navigation, No-go Zones, Selective Room Cleaning, Super Strong Suction, Wi-Fi Connected",
+      price: 599.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/51YDcTQHXRL._AC_SL1000_.jpg"
+   },
+   {
+      id: "66",
+      title: "TP-Link AX1500 WiFi Extender Internet Booster, WiFi 6 Range Extender Covers up to 1500 sq.ft and 25 Devices,Dual Band up to 1.5Gbps Speed, AP Mode w/Gigabit Port, APP Setup, OneMesh Compatible(RE505X)",
+      price: 89.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/517mZ5HRrtL._AC_SL1500_.jpg"
+   },
+   {
+      id: "67",
+      title: "Toshiba Smart WiFi Air Purifier, 3-in-1 True HEPA Air Cleaner, Designed for Allergies, Pollen, Pets, Odors, Smoke and Dust, works with Alexa, Black – A Certified for Humans Device",
+      price: 84.99,
+      rating: 5,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61h4Sh6Il0L._AC_SL1500_.jpg"
+   },
+   {
+      id: "68",
+      title: "Kyvol Cybovac E20 Robot Vacuum Cleaner, 2000Pa Suction, 150 min Runtime, Boundary Strips Included, Quiet, Super-Thin, Self-Charging, Works with Alexa, Ideal for Pet Hair, Carpets, Hard Floors",
+      price: 199.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/81whgkSdj%2BL._AC_SL1500_.jpg"
+   },
+   {
+      id: "69",
+      title: "6Pack All-Round Protection Cap with Clear Wide Visor Spitting Anti-Fog Lens, Lightweight Transparent Shield with for Men Women",
+      price: 8.49,
+      rating: 4,
+      image: "https://images-na.ssl-images-amazon.com/images/I/61rB4Dig3yL._AC_SL1000_.jpg"
+   },
+   {
+      id: "70",
+      title: "Toshiba ML-EM34P(SS) Smart Countertop Microwave Oven Works with Alexa, Humidity Sensor and Sound On/Off Function, 1100W, 1.3 Cu.ft, Stainless Steel",
+      price: 139.99,
+      rating: 3,
+      image: "https://images-na.ssl-images-amazon.com/images/I/81RrxJHAntL._AC_SL1500_.jpg"
+   }
+]
+
+export {Cameras, Computers, Lights, SmartDevice}
